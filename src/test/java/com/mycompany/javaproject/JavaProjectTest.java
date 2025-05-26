@@ -116,7 +116,7 @@ public class JavaProjectTest {
 
     @Test
     public void testMain() {
-        // main method typically not tested directly in unit tests
+        
     }
 }
 

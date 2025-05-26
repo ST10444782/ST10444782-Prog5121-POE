@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.javaproject.JavaProjectTest" time="0.078" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.javaproject.JavaProjectTest" time="0.117" tests="11" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\lab_services_student\Documents\NetBeansProjects\JavaProject\target\test-classes;C:\Users\lab_services_student\Documents\NetBeansProjects\JavaProject\target\classes;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\lab_services_student\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\lab_services_student\Documents\NetBeansProjects\JavaProject\target\test-classes;C:\Users\lab_services_student\Documents\NetBeansProjects\JavaProject\target\classes;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\lab_services_student\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\json\json\20231013\json-20231013.jar;"/>
     <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,10 +15,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk21.0.5_11\bin"/>
-    <property name="sun.java.command" value="C:\Users\lab_services_student\AppData\Local\Temp\surefire8594761261600701252\surefirebooter-20250422175005267_3.jar C:\Users\lab_services_student\AppData\Local\Temp\surefire8594761261600701252 2025-04-22T17-50-05_069-jvmRun1 surefire-20250422175005267_1tmp surefire_0-20250422175005267_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\lab_services_student\AppData\Local\Temp\surefire16250111976767025194\surefirebooter-20250526144631431_3.jar C:\Users\lab_services_student\AppData\Local\Temp\surefire16250111976767025194 2025-05-26T14-46-31_239-jvmRun1 surefire-20250526144631431_1tmp surefire_0-20250526144631431_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.mycompany.javaproject.JavaProjectTest#testCheckPasswordComplexityMeetsRequirements"/>
-    <property name="surefire.test.class.path" value="C:\Users\lab_services_student\Documents\NetBeansProjects\JavaProject\target\test-classes;C:\Users\lab_services_student\Documents\NetBeansProjects\JavaProject\target\classes;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\lab_services_student\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\lab_services_student\Documents\NetBeansProjects\JavaProject\target\test-classes;C:\Users\lab_services_student\Documents\NetBeansProjects\JavaProject\target\classes;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\lab_services_student\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\lab_services_student\.m2\repository\org\json\json\20231013\json-20231013.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\lab_services_student"/>
     <property name="user.language" value="en"/>
@@ -31,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\lab_services_student\AppData\Local\Temp\surefire8594761261600701252\surefirebooter-20250422175005267_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\lab_services_student\AppData\Local\Temp\surefire16250111976767025194\surefirebooter-20250526144631431_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-LTS"/>
@@ -61,18 +60,35 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testCheckPasswordComplexityMeetsRequirements" classname="com.mycompany.javaproject.JavaProjectTest" time="0.038">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+  <testcase name="testCheckUsernameIncorrectlyFormatted" classname="com.mycompany.javaproject.JavaProjectTest" time="0.03"/>
+  <testcase name="testCheckPasswordComplexityDoesNotMeetRequirements" classname="com.mycompany.javaproject.JavaProjectTest" time="0.001"/>
+  <testcase name="testLoginUserFailed" classname="com.mycompany.javaproject.JavaProjectTest" time="0.004"/>
+  <testcase name="testCheckCellPhoneNumberCorrectlyFormatted" classname="com.mycompany.javaproject.JavaProjectTest" time="0.003"/>
+  <testcase name="testMain" classname="com.mycompany.javaproject.JavaProjectTest" time="0.002"/>
+  <testcase name="testReturnLoginStatusSuccessful" classname="com.mycompany.javaproject.JavaProjectTest" time="0.011"/>
+  <testcase name="testRegisterUser" classname="com.mycompany.javaproject.JavaProjectTest" time="0.008">
+    <failure message="expected: &lt;Username successfully captured.&#10;Password successfully captured.&#10;Cell number successfully captured.&#10;&gt; but was: &lt;Username successfully captured.&#10;Password successfully captured.&#10;Cell phone number successfully added.&#10;&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+expected: <Username successfully captured.
+Password successfully captured.
+Cell number successfully captured.
+> but was: <Username successfully captured.
+Password successfully captured.
+Cell phone number successfully added.
+>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at com.mycompany.javaproject.JavaProjectTest.testCheckPasswordComplexityMeetsRequirements(JavaProjectTest.java:38)
+	at com.mycompany.javaproject.JavaProjectTest.testRegisterUser(JavaProjectTest.java:74)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ]]></failure>
   </testcase>
+  <testcase name="testCheckPasswordComplexityMeetsRequirements" classname="com.mycompany.javaproject.JavaProjectTest" time="0.001"/>
+  <testcase name="testLoginUserSuccessful" classname="com.mycompany.javaproject.JavaProjectTest" time="0.001"/>
+  <testcase name="testReturnLoginStatusFailed" classname="com.mycompany.javaproject.JavaProjectTest" time="0.001"/>
+  <testcase name="testCheckCellPhoneNumberIncorrectlyFormatted" classname="com.mycompany.javaproject.JavaProjectTest" time="0.001"/>
 </testsuite>
