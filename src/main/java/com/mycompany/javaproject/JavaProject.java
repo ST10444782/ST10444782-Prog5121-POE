@@ -9,14 +9,14 @@ import javax.swing.JOptionPane;
 import java.util.ArrayList;
 
 public class JavaProject {
-    // Stored data for user credentials and messages
+    
     static String savedUsername;
     static String savedPassword;
     static String savedPhoneNumber;
     static int maxMessages;
     static int messagesSent = 0;
 
-    // Check username: must contain underscore and be <= 5 characters
+    
     public static boolean checkUsername(String username) {
         return username != null && username.contains("_") && username.length() <= 5;
     }
