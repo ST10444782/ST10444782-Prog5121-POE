@@ -1,0 +1,153 @@
+package com.mycompany.javaproject;
+
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
+
+public class JavaProjectTest {
+
+    
+    @Before
+    public void setUp() {
+        JavaProject.savedUsername = null;
+        JavaProject.savedPassword = null;
+        JavaProject.savedPhoneNumber = null;
+        JavaProject.maxMessages = 0;
+        JavaProject.messagesSent = 0;
+    }
+
+    // Test checkUsername with a correctly formatted username
+    @Test
+    public void testCheckUsernameCorrectlyFormatted() {
+        String username = "kyl_1";
+        boolean result = JavaProject.checkUsername(username);
+        assertTrue("Username should be correctly formatted", result);
+    }
+
+    // Test checkUsername with an incorrectly formatted username (no underscore)
+    @Test
+    public void testCheckUsernameIncorrectlyFormattedNoUnderscore() {
+        String username = "af4";
+        boolean result = JavaProject.checkUsername(username);
+        assertFalse("Username should be incorrectly formatted (no underscore)", result);
+    }
+
+    // Test checkUsername with an incorrectly formatted username (too long)
+    @Test
+    public void testCheckUsernameIncorrectlyFormattedTooLong() {
+        String username = "kyle_123";
+        boolean result = JavaProject.checkUsername(username);
+        assertFalse("Username should be incorrectly formatted (too long)", result);
+    }
+
+    // Test checkPasswordComplexity with a password that meets requirements
+    @Test
+    public void testCheckPasswordComplexityMeetsRequirements() {
+        String password = "Ch&sec@ke99!";
+        boolean result = JavaProject.checkPasswordComplexity(password);
+        assertTrue("Password should meet complexity requirements", result);
+    }
+
+    // Test checkPasswordComplexity with a password that does not meet requirements
+    @Test
+    public void testCheckPasswordComplexityDoesNotMeetRequirements() {
+        String password = "password";
+        boolean result = JavaProject.checkPasswordComplexity(password);
+        assertFalse("Password should not meet complexity requirements", result);
+    }
+
+    // Test checkCellPhoneNumber with a correctly formatted phone number
+    @Test
+    public void testCheckCellPhoneNumberCorrectlyFormatted() {
+        String phoneNumber = "+27838968976";
+        boolean result = JavaProject.checkCellPhoneNumber(phoneNumber);
+        assertTrue("Phone number should be correctly formatted", result);
+    }
+
+    // Test checkCellPhoneNumber with an incorrectly formatted phone number
+    @Test
+    public void testCheckCellPhoneNumberIncorrectlyFormatted() {
+        String phoneNumber = "08966553";
+        boolean result = JavaProject.checkCellPhoneNumber(phoneNumber);
+        assertFalse("Phone number should be incorrectly formatted", result);
+    }
+
+    // Test registerUser with valid inputs
+    @Test
+    public void testRegisterUserSuccess() {
+        String username = "kyl_1";
+        String password = "Ch&sec@ke99!";
+        String phoneNumber = "+27838968976";
+        String expectedResult = "Username successfully captured.\n" +
+                               "Password successfully captured.\n" +
+                               "Cell phone number successfully added.";
+        // Temporarily modify registerUser to accept parameters for testing
+        String result = JavaProject.registerUser(username, password, phoneNumber);
+        assertEquals("Registration should succeed with valid inputs", expectedResult, result);
+        assertEquals("savedUsername should be set", username, JavaProject.savedUsername);
+        assertEquals("savedPassword should be set", password, JavaProject.savedPassword);
+        assertEquals("savedPhoneNumber should be set", phoneNumber, JavaProject.savedPhoneNumber);
+    }
+
+    // Test loginUser with successful login
+    @Test
+    public void testLoginUserSuccessful() {
+        JavaProject.savedUsername = "kyl_1";
+        JavaProject.savedPassword = "Ch&sec@ke99!";
+        String username = "kyl_1";
+        String password = "Ch&sec@ke99!";
+        boolean result = JavaProject.loginUser(username, password);
+        assertTrue("Login should succeed with correct credentials", result);
+    }
+
+    // Test loginUser with failed login (wrong password)
+    @Test
+    public void testLoginUserFailedWrongPassword() {
+        JavaProject.savedUsername = "kyl_1";
+        JavaProject.savedPassword = "Ch&sec@ke99!";
+        String username = "kyl_1";
+        String password = "wrongPassword";
+        boolean result = JavaProject.loginUser(username, password);
+        assertFalse("Login should fail with incorrect password", result);
+    }
+
+    // Test loginUser with failed login (wrong username)
+    @Test
+    public void testLoginUserFailedWrongUsername() {
+        JavaProject.savedUsername = "kyl_1";
+        JavaProject.savedPassword = "Ch&sec@ke99!";
+        String username = "wrongUser";
+        String password = "Ch&sec@ke99!";
+        boolean result = JavaProject.loginUser(username, password);
+        assertFalse("Login should fail with incorrect username", result);
+    }
+
+    // Test returnLoginStatus with successful login
+    @Test
+    public void testReturnLoginStatusSuccessful() {
+        JavaProject.savedUsername = "kyl_1";
+        JavaProject.savedPassword = "Ch&sec@ke99!";
+        String username = "kyl_1";
+        String password = "Ch&sec@ke99!";
+        String expectedResult = "Welcome <kyl>, <1> it is great to see you again.";
+        String result = JavaProject.returnLoginStatus(username, password);
+        assertEquals("Login status should indicate success", expectedResult, result);
+    }
+
+    // Test returnLoginStatus with failed login
+    @Test
+    public void testReturnLoginStatusFailed() {
+        JavaProject.savedUsername = "kyl_1";
+        JavaProject.savedPassword = "Ch&sec@ke99!";
+        String username = "kyl_1";
+        String password = "wrongPassword";
+        String expectedResult = "Username or password incorrect, please try again.";
+        String result = JavaProject.returnLoginStatus(username, password);
+        assertEquals("Login status should indicate failure", expectedResult, result);
+    }
+}
+
+
+
+   
